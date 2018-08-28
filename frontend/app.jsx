@@ -1,14 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
 //Files
+import FantasyBooks from FantasyBooks.jsx;
 
-class App extends React.Component {
-	render(){
-		return (
-			<FantasyBooks />
-		)
-	}
-};
+const MainApp = () => (
+  <FantasyBooks />
+);
 
-ReactDOM.render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'));
